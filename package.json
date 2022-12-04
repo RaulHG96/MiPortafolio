@@ -1,0 +1,14 @@
+{
+  "name": "cv-digital",
+  "version": "1.0.0",
+  "description": "Raul Hidalgo CV Digital",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul Hidalgo Gaspar",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
