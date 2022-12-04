@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-6xl uppercase pb-3
+    }
+    h2 {
+        @apply text-5xl uppercase pb-3
+    }
+    h3 {
+        @apply text-4xl uppercase pb-3
+    }
+    h4 {
+        @apply text-3xl uppercase pb-3
+    }
+    h5 {
+        @apply text-2xl uppercase pb-3
+    }
+    h6 {
+        @apply text-xl uppercase pb-3
+    }
+    article {
+        @apply my-4
+    }
+}

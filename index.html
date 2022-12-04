@@ -1,28 +1,204 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="!h-full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="h-full">
-    <div>
-        <!-- <h1 class="bg-slate-600 text-2xl">Hola desde tailwind</h1> -->
-        <div class="md:flex flex-col md:flex-row">
-            <div class="bg-orange-300 w-full md:w-1/6">
-                <div class="p-5">
-                    <img src="https://via.placeholder.com/150" alt="" class="rounded-full">
+<body class="bg-[#DFEBE9] font-[dosis]">
+    <div class="w-auto h-auto">
+        <div class="md:flex flex-col md:flex-row h-auto">
+            <!-- bg-[#4B77BE] -->
+            <div class="w-full md:w-1/6 h-auto md:h-screen pr-2 bg-white">
+                <div class="flex flex-row p-5 gap-5">
+                    <span>
+                        <img src="https://picsum.photos/200" alt="" class="rounded-full">
+                    </span>
+                    <span class="md:hidden">
+                        <h1 class="text-4xl md:text-5xl uppercase pb-3 text-[#4AAA91] font-bold">Nombre de la persona</h1>
+                    </span>
                 </div>
-                <div class="flex flex-row md:flex-col">
-                    <a href="" class="bg-red-300 rounded-tr-full rounded-br-full">Inicio</a>
-                    <a href="" class="bg-green-300 rounded-tr-full rounded-br-full">Inicio</a>
-                    <a href="" class="bg-blue-300 rounded-tr-full rounded-br-full">Inicio</a>
-                </div>
+                <!-- Lista de opciones -->
+                <ul class="flex flex-row md:flex-col sticky sm:sticky md:top-0 md:block">
+                    <li class="basis-1/5 mb-5 relative">
+                        <div class="absolute w-full h-full bg-[#EEB4B8] -z-10 -rotate-3 -left-2"></div>
+                        <div class="absolute w-full h-full bg-[#359C87] -z-10 rotate-3 -left-1"></div>
+                        <a href="#about-me" class="flex p-2 gap-2 justify-center md:justify-start text-white">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+                                </svg>                              
+                            </span>
+                            <span class="hidden sm:!block md:!block">
+                                Sobre mi
+                            </span>
+                        </a>
+                    </li>
+                    <li class="basis-1/5 mb-5 relative">
+                        <div class="absolute w-full h-full bg-[#EEB4B8] -z-10 -rotate-3 -left-2"></div>
+                        <div class="absolute w-full h-full bg-[#359C87] -z-10 rotate-3 -left-1"></div>
+                        <a href="#education" class="flex p-2 gap-2 justify-center md:justify-start text-white">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                                </svg>                                  
+                            </span>
+                            <span class="hidden sm:!block md:!block">
+                                Educación
+                            </span>
+                        </a>
+                    </li>
+                    <li class="basis-1/5 mb-5 relative">
+                        <div class="absolute w-full h-full bg-[#EEB4B8] -z-10 -rotate-3 -left-2"></div>
+                        <div class="absolute w-full h-full bg-[#359C87] -z-10 rotate-3 -left-1"></div>
+                        <a href="#work-experience" class="flex p-2 gap-2 justify-center md:justify-start text-white">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                                </svg>                                  
+                            </span>
+                            <span class="hidden sm:!block md:!block">
+                                Experiencia
+                            </span>
+                        </a>
+                    </li>
+                    <li class="basis-1/5 mb-5 relative">
+                        <div class="absolute w-full h-full bg-[#EEB4B8] -z-10 -rotate-3 -left-2"></div>
+                        <div class="absolute w-full h-full bg-[#359C87] -z-10 rotate-3 -left-1"></div>
+                        <a href="#projects" class="flex p-2 gap-2 justify-center md:justify-start text-white">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                                </svg>                                  
+                            </span>
+                            <span class="hidden sm:!block md:!block">
+                                Proyectos
+                            </span>
+                        </a>
+                    </li>
+                    <li class="basis-1/5 mb-5 relative">
+                        <div class="absolute w-full h-full bg-[#EEB4B8] -z-10 -rotate-3 -left-2"></div>
+                        <div class="absolute w-full h-full bg-[#359C87] -z-10 rotate-3 -left-1"></div>
+                        <a href="#technologies" class="flex p-2 gap-2 justify-center md:justify-start text-white">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                                </svg>                                  
+                            </span>
+                            <span class="hidden sm:!block md:!block">
+                                Tecnologías
+                            </span>
+                        </a>
+                    </li>
+                    <li class="basis-1/5 mb-5 relative">
+                        <div class="absolute w-full h-full bg-[#EEB4B8] -z-10 -rotate-3 -left-2"></div>
+                        <div class="absolute w-full h-full bg-[#359C87] -z-10 rotate-3 -left-1"></div>
+                        <a href="#contact-me" class="flex p-2 gap-2 justify-center md:justify-start text-white">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+                                </svg>                                                                   
+                            </span>
+                            <span class="hidden sm:!block md:!block">
+                                Contacto
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="bg-slate-500 w-full md:w-5/6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis esse, architecto adipisci blanditiis omnis. Magnam, ipsam dolores facilis, perferendis quis delectus voluptatibus odio praesentium harum nisi unde repellat libero.
+            <div class="md:w-5/6 p-5 h-auto md:h-screen md:overflow-auto">
+                <article>
+                    <h1 class="hidden md:block text-[#4AAA91] font-bold">Nombre de la persona</h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nobis esse, architecto adipisci blanditiis omnis. Magnam, ipsam dolores facilis, perferendis quis delectus voluptatibus odio praesentium harum nisi unde repellat libero.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum non ducimus consequuntur accusantium modi quae magnam, autem, corporis accusamus saepe amet iusto natus quo, eaque eligendi. Sequi amet sint harum.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, earum cum quibusdam, eligendi, molestias in ut deleniti sint ducimus non officiis? Eaque unde corrupti sed voluptas ipsam dolorem, maiores natus!
+                    Commodi porro reprehenderit modi excepturi mollitia dicta? Quas nobis quos at tenetur necessitatibus accusamus quia laborum accusantium iusto sunt vitae esse eius quisquam minima praesentium cum optio qui, vel quae.
+                    Laboriosam accusamus nam temporibus, dolorem exercitationem dicta impedit nisi. Unde vel labore porro aperiam iusto ut dolorum accusantium molestias quasi, maiores sequi, molestiae esse. Minima odio praesentium tempora velit architecto!
+                    Ipsum, voluptatibus! Minus distinctio deserunt facilis atque! Rem perferendis numquam voluptatem blanditiis aliquid cupiditate? Eveniet dolorem, expedita incidunt totam eligendi perferendis nostrum, exercitationem earum distinctio ex quis vero illo delectus!
+                    Ipsa, iste. Nulla dicta sint saepe necessitatibus magni itaque soluta minima fuga aliquam aliquid, laborum placeat, accusamus ea nihil ut, tempore atque culpa ipsum autem velit natus ducimus dolorum aperiam?
+                </article>
+                <article id="about-me">
+                    <h4 id="">Sobre mi</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi ducimus aliquid odit quibusdam culpa tempora exercitationem, facere dolorem asperiores obcaecati sunt. Facilis quasi odio suscipit facere minima, amet provident.
+                    </p>
+                </article>
+                <article id="education">
+                    <h4 id="">Educación</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nisi ducimus aliquid odit quibusdam culpa tempora exercitationem, facere dolorem asperiores obcaecati sunt. Facilis quasi odio suscipit facere minima, amet provident.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi commodi quaerat autem. Quasi, cupiditate veritatis veniam expedita dignissimos nobis laudantium maxime praesentium minus! Necessitatibus, nobis perspiciatis. Odio voluptate dignissimos nemo?
+                    </p>
+                </article>
+                <article id="work-experience">
+                    <h4>Experiencia</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perferendis rerum eveniet tempora autem dolorem officia quia nemo dolores, laudantium, placeat suscipit minus vero labore illum magni, neque voluptatibus dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maxime ea similique, quia cum accusantium perferendis? Nisi, delectus perferendis hic recusandae totam numquam voluptatibus odit quidem doloremque exercitationem, nostrum nobis.
+                        Quam ex laboriosam autem numquam similique. Quam temporibus libero sint! Magnam autem mollitia illo quo animi nobis suscipit hic, aspernatur ipsa, repellat tempore odio cum? Repudiandae modi quas fugit voluptas.
+                        Harum, minima possimus, quasi dicta neque sit autem quos hic minus provident aut eligendi quis nostrum. Iure consequatur earum, accusantium suscipit esse perspiciatis labore facere optio libero, minus officia nobis.
+                        Aliquam accusantium corrupti dignissimos quo ipsum, voluptates voluptatem fuga itaque animi cumque quaerat dicta quis sequi eius ad hic eaque molestiae saepe non. Dolores eius itaque totam beatae, nam aliquam.
+                        Beatae perferendis repellendus fuga itaque rerum aperiam possimus. Doloribus, expedita sunt quaerat eum voluptas sed eveniet explicabo excepturi perspiciatis ullam aliquid autem quam assumenda nam dicta fuga a alias! Nesciunt.
+                        Cumque iusto, ipsum ipsa fugit facere a dolor perspiciatis quia, repellendus, doloremque temporibus culpa provident voluptatem voluptate veniam exercitationem nemo officiis porro accusantium incidunt. Doloribus voluptatibus necessitatibus aut eveniet aperiam!
+                        Voluptas nesciunt modi est, aliquam voluptates ad accusantium obcaecati, perspiciatis explicabo numquam laudantium officiis impedit. Qui, distinctio quas. Ipsa animi iure similique exercitationem quis, vero omnis neque enim maxime tempore.
+                        Porro aliquid libero vel veritatis voluptatibus dolore pariatur dolor voluptatem quisquam quaerat molestiae quod laudantium at voluptatum laboriosam modi ipsum odio, voluptate aspernatur cupiditate eveniet consectetur? Ipsam reprehenderit quasi quidem.
+                        Cupiditate libero saepe porro consequatur sequi itaque at quibusdam perspiciatis officiis blanditiis voluptatum voluptates eos iure delectus hic error obcaecati aperiam eligendi harum quos, recusandae nam ipsam et voluptate? Sapiente!
+                        Facilis, ad pariatur distinctio sed ut placeat eum tenetur, consequatur, earum reiciendis sequi cum at. Impedit doloremque sapiente dolore perspiciatis aut sed rerum voluptate vel tenetur accusamus? Temporibus, quod eveniet.
+                    </p>
+                </article>
+                <article id="projects">
+                    <h4>Proyectos</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perferendis rerum eveniet tempora autem dolorem officia quia nemo dolores, laudantium, placeat suscipit minus vero labore illum magni, neque voluptatibus dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maxime ea similique, quia cum accusantium perferendis? Nisi, delectus perferendis hic recusandae totam numquam voluptatibus odit quidem doloremque exercitationem, nostrum nobis.
+                        Quam ex laboriosam autem numquam similique. Quam temporibus libero sint! Magnam autem mollitia illo quo animi nobis suscipit hic, aspernatur ipsa, repellat tempore odio cum? Repudiandae modi quas fugit voluptas.
+                        Harum, minima possimus, quasi dicta neque sit autem quos hic minus provident aut eligendi quis nostrum. Iure consequatur earum, accusantium suscipit esse perspiciatis labore facere optio libero, minus officia nobis.
+                        Aliquam accusantium corrupti dignissimos quo ipsum, voluptates voluptatem fuga itaque animi cumque quaerat dicta quis sequi eius ad hic eaque molestiae saepe non. Dolores eius itaque totam beatae, nam aliquam.
+                        Beatae perferendis repellendus fuga itaque rerum aperiam possimus. Doloribus, expedita sunt quaerat eum voluptas sed eveniet explicabo excepturi perspiciatis ullam aliquid autem quam assumenda nam dicta fuga a alias! Nesciunt.
+                        Cumque iusto, ipsum ipsa fugit facere a dolor perspiciatis quia, repellendus, doloremque temporibus culpa provident voluptatem voluptate veniam exercitationem nemo officiis porro accusantium incidunt. Doloribus voluptatibus necessitatibus aut eveniet aperiam!
+                        Voluptas nesciunt modi est, aliquam voluptates ad accusantium obcaecati, perspiciatis explicabo numquam laudantium officiis impedit. Qui, distinctio quas. Ipsa animi iure similique exercitationem quis, vero omnis neque enim maxime tempore.
+                        Porro aliquid libero vel veritatis voluptatibus dolore pariatur dolor voluptatem quisquam quaerat molestiae quod laudantium at voluptatum laboriosam modi ipsum odio, voluptate aspernatur cupiditate eveniet consectetur? Ipsam reprehenderit quasi quidem.
+                        Cupiditate libero saepe porro consequatur sequi itaque at quibusdam perspiciatis officiis blanditiis voluptatum voluptates eos iure delectus hic error obcaecati aperiam eligendi harum quos, recusandae nam ipsam et voluptate? Sapiente!
+                        Facilis, ad pariatur distinctio sed ut placeat eum tenetur, consequatur, earum reiciendis sequi cum at. Impedit doloremque sapiente dolore perspiciatis aut sed rerum voluptate vel tenetur accusamus? Temporibus, quod eveniet.
+                    </p>
+                </article>
+                <article id="technologies">
+                    <h4>Tecnologías</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perferendis rerum eveniet tempora autem dolorem officia quia nemo dolores, laudantium, placeat suscipit minus vero labore illum magni, neque voluptatibus dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maxime ea similique, quia cum accusantium perferendis? Nisi, delectus perferendis hic recusandae totam numquam voluptatibus odit quidem doloremque exercitationem, nostrum nobis.
+                        Quam ex laboriosam autem numquam similique. Quam temporibus libero sint! Magnam autem mollitia illo quo animi nobis suscipit hic, aspernatur ipsa, repellat tempore odio cum? Repudiandae modi quas fugit voluptas.
+                        Harum, minima possimus, quasi dicta neque sit autem quos hic minus provident aut eligendi quis nostrum. Iure consequatur earum, accusantium suscipit esse perspiciatis labore facere optio libero, minus officia nobis.
+                        Aliquam accusantium corrupti dignissimos quo ipsum, voluptates voluptatem fuga itaque animi cumque quaerat dicta quis sequi eius ad hic eaque molestiae saepe non. Dolores eius itaque totam beatae, nam aliquam.
+                        Beatae perferendis repellendus fuga itaque rerum aperiam possimus. Doloribus, expedita sunt quaerat eum voluptas sed eveniet explicabo excepturi perspiciatis ullam aliquid autem quam assumenda nam dicta fuga a alias! Nesciunt.
+                        Cumque iusto, ipsum ipsa fugit facere a dolor perspiciatis quia, repellendus, doloremque temporibus culpa provident voluptatem voluptate veniam exercitationem nemo officiis porro accusantium incidunt. Doloribus voluptatibus necessitatibus aut eveniet aperiam!
+                        Voluptas nesciunt modi est, aliquam voluptates ad accusantium obcaecati, perspiciatis explicabo numquam laudantium officiis impedit. Qui, distinctio quas. Ipsa animi iure similique exercitationem quis, vero omnis neque enim maxime tempore.
+                        Porro aliquid libero vel veritatis voluptatibus dolore pariatur dolor voluptatem quisquam quaerat molestiae quod laudantium at voluptatum laboriosam modi ipsum odio, voluptate aspernatur cupiditate eveniet consectetur? Ipsam reprehenderit quasi quidem.
+                        Cupiditate libero saepe porro consequatur sequi itaque at quibusdam perspiciatis officiis blanditiis voluptatum voluptates eos iure delectus hic error obcaecati aperiam eligendi harum quos, recusandae nam ipsam et voluptate? Sapiente!
+                        Facilis, ad pariatur distinctio sed ut placeat eum tenetur, consequatur, earum reiciendis sequi cum at. Impedit doloremque sapiente dolore perspiciatis aut sed rerum voluptate vel tenetur accusamus? Temporibus, quod eveniet.
+                    </p>
+                </article>
+                <article id="contact-me">
+                    <h4>Contáctame</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perferendis rerum eveniet tempora autem dolorem officia quia nemo dolores, laudantium, placeat suscipit minus vero labore illum magni, neque voluptatibus dolore.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maxime ea similique, quia cum accusantium perferendis? Nisi, delectus perferendis hic recusandae totam numquam voluptatibus odit quidem doloremque exercitationem, nostrum nobis.
+                        Quam ex laboriosam autem numquam similique. Quam temporibus libero sint! Magnam autem mollitia illo quo animi nobis suscipit hic, aspernatur ipsa, repellat tempore odio cum? Repudiandae modi quas fugit voluptas.
+                        Harum, minima possimus, quasi dicta neque sit autem quos hic minus provident aut eligendi quis nostrum. Iure consequatur earum, accusantium suscipit esse perspiciatis labore facere optio libero, minus officia nobis.
+                        Aliquam accusantium corrupti dignissimos quo ipsum, voluptates voluptatem fuga itaque animi cumque quaerat dicta quis sequi eius ad hic eaque molestiae saepe non. Dolores eius itaque totam beatae, nam aliquam.
+                        Beatae perferendis repellendus fuga itaque rerum aperiam possimus. Doloribus, expedita sunt quaerat eum voluptas sed eveniet explicabo excepturi perspiciatis ullam aliquid autem quam assumenda nam dicta fuga a alias! Nesciunt.
+                        Cumque iusto, ipsum ipsa fugit facere a dolor perspiciatis quia, repellendus, doloremque temporibus culpa provident voluptatem voluptate veniam exercitationem nemo officiis porro accusantium incidunt. Doloribus voluptatibus necessitatibus aut eveniet aperiam!
+                        Voluptas nesciunt modi est, aliquam voluptates ad accusantium obcaecati, perspiciatis explicabo numquam laudantium officiis impedit. Qui, distinctio quas. Ipsa animi iure similique exercitationem quis, vero omnis neque enim maxime tempore.
+                        Porro aliquid libero vel veritatis voluptatibus dolore pariatur dolor voluptatem quisquam quaerat molestiae quod laudantium at voluptatum laboriosam modi ipsum odio, voluptate aspernatur cupiditate eveniet consectetur? Ipsam reprehenderit quasi quidem.
+                        Cupiditate libero saepe porro consequatur sequi itaque at quibusdam perspiciatis officiis blanditiis voluptatum voluptates eos iure delectus hic error obcaecati aperiam eligendi harum quos, recusandae nam ipsam et voluptate? Sapiente!
+                        Facilis, ad pariatur distinctio sed ut placeat eum tenetur, consequatur, earum reiciendis sequi cum at. Impedit doloremque sapiente dolore perspiciatis aut sed rerum voluptate vel tenetur accusamus? Temporibus, quod eveniet.
+                    </p>
+                </article>
             </div>
         </div>
     </div>
